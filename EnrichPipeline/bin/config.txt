@@ -1,0 +1,4 @@
+go_alias = /panfs/ANIMAL/GROUP/group001/yangpch/bin/GO/data/GO.alias
+go_class = /panfs/ANIMAL/GROUP/group001/yangpch/bin/GO/data/GO.class
+
+distribute_svg = /panfs/ANIMAL/GROUP/group001/yangpch/bin/GO/bin/distribute_svg.pl

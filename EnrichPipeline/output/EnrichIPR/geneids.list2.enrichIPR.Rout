@@ -1,0 +1,40 @@
+
+R version 2.8.1 (2008-12-22)
+Copyright (C) 2008 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+>   source("/share/project002/yangpch/bin/EnrichPipeline/bin/EnrichIPR.R");
+>   source("/share/project002/yangpch/bin/EnrichPipeline/bin/Fisher.Chi.test.R");
+>   source("/share/project002/yangpch/bin/EnrichPipeline/bin/sort.data.frame.R");
+>   source("/share/project002/yangpch/bin/EnrichPipeline/bin/hyper.test.R")
+>   ids <- scan("input/geneids.list2",what="character",sep="\n");
+Read 2063 items
+>   if("NullFile" != "NullFile"){
++       backid <- scan("NullFile",what="character");
++       aa <- EnrichIPR("input/ipr2gene.txt",supplyID=ids,univerID=backid,enrichFile="output/EnrichIPR/geneids.list2.difipr",
++ 		      p.adjust.methods="fdr",test.method="FisherChiSquare");
++       }else{
++ 	  aa <- EnrichIPR("input/ipr2gene.txt",supplyID=ids,enrichFile="output/EnrichIPR/geneids.list2.difipr",
++ 			  p.adjust.methods="fdr",test.method="FisherChiSquare");
++       }
+Read 3427 items
+>   q(save="no")
+> proc.time()
+   user  system elapsed 
+  6.479   0.106   7.529 

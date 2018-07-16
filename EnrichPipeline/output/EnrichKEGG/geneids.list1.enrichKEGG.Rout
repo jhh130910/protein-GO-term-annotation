@@ -1,0 +1,38 @@
+
+R version 2.8.1 (2008-12-22)
+Copyright (C) 2008 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+>   source("/share/project002/yangpch/bin/EnrichPipeline/bin/EnrichKEGG.R");
+>   source("/share/project002/yangpch/bin/EnrichPipeline/bin/Fisher.Chi.test.R");
+>   source("/share/project002/yangpch/bin/EnrichPipeline/bin/sort.data.frame.R");
+>     ids <- scan("input/geneids.list1",what="character",sep="\n")
+Read 430 items
+>     if("NullFile" != "NullFile"){
++        backid <- scan("NullFile",what="character");
++        aa <- EnrichKEGG("/share/project002/yangpch/bin/EnrichPipeline/bin/../data/map_title.tab","input/KEGG.map.gene.txt",supplyID=ids,univerID=backid,enrichFile="output/EnrichKEGG/geneids.list1.difkegg",
++ 	                     p.adjust.methods="fdr",test.method="FisherChiSquare");
++     }else{
++        aa <- EnrichKEGG("/share/project002/yangpch/bin/EnrichPipeline/bin/../data/map_title.tab","input/KEGG.map.gene.txt",supplyID=ids,enrichFile="output/EnrichKEGG/geneids.list1.difkegg",
++ 		                 p.adjust.methods="fdr",test.method="FisherChiSquare");
++     }
+Read 344 items
+Read 256 items
+>     q(save="no")
+> proc.time()
+   user  system elapsed 
+  0.828   0.064   2.956 

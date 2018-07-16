@@ -1,0 +1,40 @@
+
+R version 2.9.1 (2009-06-26)
+Copyright (C) 2009 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+>   source("/panfs/ANIMAL/GROUP/group001/yangpch/bin/EnrichPipeline/bin/EnrichIPR.R");
+>   source("/panfs/ANIMAL/GROUP/group001/yangpch/bin/EnrichPipeline/bin/Fisher.Chi.test.R");
+>   source("/panfs/ANIMAL/GROUP/group001/yangpch/bin/EnrichPipeline/bin/sort.data.frame.R");
+>   source("/panfs/ANIMAL/GROUP/group001/yangpch/bin/EnrichPipeline/bin/hyper.test.R")
+> 	source("/panfs/ANIMAL/GROUP/group001/yangpch/bin/EnrichPipeline/bin/MergIPR.R")
+>   ids <- scan("input/geneids.list1",what="character",sep="\n");
+Read 430 items
+>   if("NullFile" != "NullFile"){
++       backid <- scan("NullFile",what="character");
++       aa <- EnrichIPR("input/ipr2gene.txt",supplyID=ids,univerID=backid,enrichFile="output/EnrichIPR/geneids.list1.difipr",pair.file="/panfs/ANIMAL/GROUP/group001/yangpch/bin/EnrichPipeline/bin/../data/ParentChildTreeFile.txt",
++ 		      p.adjust.methods="fdr",test.method="FisherChiSquare",filt="p",pc=0.05,Unanno="N");
++       }else{
++ 	  aa <- EnrichIPR("input/ipr2gene.txt",supplyID=ids,enrichFile="output/EnrichIPR/geneids.list1.difipr",pair.file="/panfs/ANIMAL/GROUP/group001/yangpch/bin/EnrichPipeline/bin/../data/ParentChildTreeFile.txt",
++ 			  p.adjust.methods="fdr",test.method="FisherChiSquare",filt="p",pc=0.05,Unanno="N");
++       }
+Read 3427 items
+Read 6325 items
+>   q(save="no")
+> proc.time()
+   user  system elapsed 
+  5.354   0.047  10.901 

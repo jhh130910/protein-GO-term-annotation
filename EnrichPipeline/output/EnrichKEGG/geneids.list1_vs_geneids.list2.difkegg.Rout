@@ -1,0 +1,441 @@
+
+R version 2.9.1 (2009-06-26)
+Copyright (C) 2009 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> 	source("/panfs/ANIMAL/GROUP/group001/yangpch/bin/EnrichPipeline/bin/CompareTwolist.KEGG.R")
+>   source("/panfs/ANIMAL/GROUP/group001/yangpch/bin/EnrichPipeline/bin/Fisher.Chi.test.R");
+>   source("/panfs/ANIMAL/GROUP/group001/yangpch/bin/EnrichPipeline/bin/sort.data.frame.R");
+> 	SupplyID1 <- scan("input/geneids.list1",what="character")
+Read 430 items
+> 	SupplyID2 <- scan("input/geneids.list2",what="character")
+Read 2063 items
+> 	CompareTwolist.KEGG(supplyID1=SupplyID1,supplyID2=SupplyID2,map.title.file="/panfs/ANIMAL/GROUP/group001/yangpch/bin/EnrichPipeline/bin/../data/map_title.tab",
++     map2gene.file="input/KEGG.map.gene.txt",samp1="geneids.list1",samp2="geneids.list2",
++ 		p.adjust.method="fdr",test.method="FisherChiSquare",
++ 		filt="adjp",pc=0.05,enrichFile="output/EnrichKEGG//geneids.list1_vs_geneids.list2.difkegg")
+Read 414 items
+Read 256 items
+         MapID                                                   MapTitle
+01100 map01100                                         Metabolic pathways
+04330 map04330                                    Notch signaling pathway
+05012 map05012                                        Parkinson's disease
+04320 map04320                               Dorso-ventral axis formation
+00040 map00040                   Pentose and glucuronate interconversions
+00053 map00053                          Ascorbate and aldarate metabolism
+00500 map00500                              Starch and sucrose metabolism
+00980 map00980               Metabolism of xenobiotics by cytochrome P450
+00982 map00982                          Drug metabolism - cytochrome P450
+04111 map04111                                         Cell cycle - yeast
+04640 map04640                                 Hematopoietic cell lineage
+05210 map05210                                          Colorectal cancer
+05218 map05218                                                   Melanoma
+05340 map05340                                   Primary immunodeficiency
+05016 map05016                                       Huntington's disease
+05200 map05200                                         Pathways in cancer
+04510 map04510                                             Focal adhesion
+00350 map00350                                        Tyrosine metabolism
+00520 map00520                Amino sugar and nucleotide sugar metabolism
+05010 map05010                                        Alzheimer's disease
+04530 map04530                                             Tight junction
+00120 map00120                             Primary bile acid biosynthesis
+00140 map00140                               Steroid hormone biosynthesis
+00340 map00340                                       Histidine metabolism
+00360 map00360                                   Phenylalanine metabolism
+00361 map00361            Chlorocyclohexane and chlorobenzene degradation
+00364 map00364                                 Fluorobenzoate degradation
+00450 map00450                                  Selenocompound metabolism
+00480 map00480                                     Glutathione metabolism
+00626 map00626                                    Naphthalene degradation
+00627 map00627                                  Aminobenzoate degradation
+00680 map00680                                         Methane metabolism
+00830 map00830                                         Retinol metabolism
+00860 map00860                       Porphyrin and chlorophyll metabolism
+00940 map00940                               Phenylpropanoid biosynthesis
+00970 map00970                                Aminoacyl-tRNA biosynthesis
+00983 map00983                            Drug metabolism - other enzymes
+01061 map01061                           Biosynthesis of phenylpropanoids
+03018 map03018                                            RNA degradation
+03022 map03022                                Basal transcription factors
+04114 map04114                                             Oocyte meiosis
+04142 map04142                                                   Lysosome
+04150 map04150                                     mTOR signaling pathway
+04370 map04370                                     VEGF signaling pathway
+04520 map04520                                          Adherens junction
+04670 map04670                       Leukocyte transendothelial migration
+04730 map04730                                       Long-term depression
+04914 map04914                    Progesterone-mediated oocyte maturation
+04950 map04950                       Maturity onset diabetes of the young
+04960 map04960                  Aldosterone-regulated sodium reabsorption
+05120 map05120 Epithelial cell signaling in Helicobacter pylori infection
+05211 map05211                                       Renal cell carcinoma
+05215 map05215                                            Prostate cancer
+04360 map04360                                              Axon guidance
+03320 map03320                                     PPAR signaling pathway
+04060 map04060                     Cytokine-cytokine receptor interaction
+04062 map04062                                Chemokine signaling pathway
+04144 map04144                                                Endocytosis
+04146 map04146                                                 Peroxisome
+04514 map04514                             Cell adhesion molecules (CAMs)
+04660 map04660                          T cell receptor signaling pathway
+04662 map04662                          B cell receptor signaling pathway
+04666 map04666                           Fc gamma R-mediated phagocytosis
+05214 map05214                                                     Glioma
+05410 map05410                          Hypertrophic cardiomyopathy (HCM)
+05414 map05414                                     Dilated cardiomyopathy
+04010 map04010                                     MAPK signaling pathway
+04020 map04020                                  Calcium signaling pathway
+04512 map04512                                   ECM-receptor interaction
+00230 map00230                                          Purine metabolism
+04115 map04115                                      p53 signaling pathway
+04080 map04080                    Neuroactive ligand-receptor interaction
+04120 map04120                             Ubiquitin mediated proteolysis
+03010 map03010                                                   Ribosome
+04210 map04210                                                  Apoptosis
+04270 map04270                         Vascular smooth muscle contraction
+04810 map04810                           Regulation of actin cytoskeleton
+04910 map04910                                  Insulin signaling pathway
+05014 map05014                        Amyotrophic lateral sclerosis (ALS)
+05222 map05222                                     Small cell lung cancer
+          Pvalue AdjustedPv x1.geneids.list1 x2.geneids.list2 n1.geneids.list1
+01100 0.04796444  0.5692996                6               49               41
+04330 0.05235239  0.5692996                1               22               41
+05012 0.05235239  0.5692996                1               22               41
+04320 0.08960896  0.5692996                2               26               41
+00040 0.19523067  0.5692996                2                2               41
+00053 0.19523067  0.5692996                2                2               41
+00500 0.19523067  0.5692996                2                2               41
+00980 0.19523067  0.5692996                2                2               41
+00982 0.19523067  0.5692996                2                2               41
+04111 0.19523067  0.5692996                2                2               41
+04640 0.19523067  0.5692996                2                2               41
+05210 0.19523067  0.5692996                2                2               41
+05218 0.19523067  0.5692996                2                2               41
+05340 0.19523067  0.5692996                2                2               41
+05016 0.20150820  0.5692996                1               14               41
+05200 0.22259423  0.5692996                4                6               41
+04510 0.24782688  0.5692996                4                7               41
+00350 0.28297748  0.5692996                2                3               41
+00520 0.28297748  0.5692996                2                3               41
+05010 0.30781377  0.5692996                1               12               41
+04530 0.36835212  0.5692996                3                5               41
+00120 0.37716098  0.5692996                1                1               41
+00140 0.37716098  0.5692996                1                1               41
+00340 0.37716098  0.5692996                1                1               41
+00360 0.37716098  0.5692996                1                1               41
+00361 0.37716098  0.5692996                1                1               41
+00364 0.37716098  0.5692996                1                1               41
+00450 0.37716098  0.5692996                1                1               41
+00480 0.37716098  0.5692996                1                1               41
+00626 0.37716098  0.5692996                1                1               41
+00627 0.37716098  0.5692996                1                1               41
+00680 0.37716098  0.5692996                1                1               41
+00830 0.37716098  0.5692996                1                1               41
+00860 0.37716098  0.5692996                1                1               41
+00940 0.37716098  0.5692996                1                1               41
+00970 0.37716098  0.5692996                1                1               41
+00983 0.37716098  0.5692996                1                1               41
+01061 0.37716098  0.5692996                1                1               41
+03018 0.37716098  0.5692996                1                1               41
+03022 0.37716098  0.5692996                1                1               41
+04114 0.37716098  0.5692996                1                1               41
+04142 0.37716098  0.5692996                1                1               41
+04150 0.37716098  0.5692996                1                1               41
+04370 0.37716098  0.5692996                1                1               41
+04520 0.37716098  0.5692996                1                1               41
+04670 0.37716098  0.5692996                1                1               41
+04730 0.37716098  0.5692996                1                1               41
+04914 0.37716098  0.5692996                1                1               41
+04950 0.37716098  0.5692996                1                1               41
+04960 0.37716098  0.5692996                1                1               41
+05120 0.37716098  0.5692996                1                1               41
+05211 0.37716098  0.5692996                1                1               41
+05215 0.37716098  0.5692996                1                1               41
+04360 0.40049396  0.5933244                3                6               41
+03320 0.50947394  0.6175442                1                2               41
+04060 0.50947394  0.6175442                1                2               41
+04062 0.50947394  0.6175442                1                2               41
+04144 0.50947394  0.6175442                1                2               41
+04146 0.50947394  0.6175442                1                2               41
+04514 0.50947394  0.6175442                1                2               41
+04660 0.50947394  0.6175442                1                2               41
+04662 0.50947394  0.6175442                1                2               41
+04666 0.50947394  0.6175442                1                2               41
+05214 0.50947394  0.6175442                1                2               41
+05410 0.50947394  0.6175442                1                2               41
+05414 0.50947394  0.6175442                1                2               41
+04010 0.60773713  0.7046228                2                4               41
+04020 0.60773713  0.7046228                2                4               41
+04512 0.60773713  0.7046228                2                4               41
+00230 0.63921501  0.7202423                2                5               41
+04115 0.63921501  0.7202423                2                5               41
+04080 0.67540317  0.7401679                2                6               41
+04120 0.67540317  0.7401679                2                6               41
+03010 1.00000000  1.0000000                1                5               41
+04210 1.00000000  1.0000000                1                3               41
+04270 1.00000000  1.0000000                1                3               41
+04810 1.00000000  1.0000000                1                4               41
+04910 1.00000000  1.0000000                1                4               41
+05014 1.00000000  1.0000000                1                4               41
+05222 1.00000000  1.0000000                1                3               41
+      n2.geneids.list2     WhichOver
+01100              154 geneids.list2
+04330              154 geneids.list2
+05012              154 geneids.list2
+04320              154 geneids.list2
+00040              154 geneids.list1
+00053              154 geneids.list1
+00500              154 geneids.list1
+00980              154 geneids.list1
+00982              154 geneids.list1
+04111              154 geneids.list1
+04640              154 geneids.list1
+05210              154 geneids.list1
+05218              154 geneids.list1
+05340              154 geneids.list1
+05016              154 geneids.list2
+05200              154 geneids.list1
+04510              154 geneids.list1
+00350              154 geneids.list1
+00520              154 geneids.list1
+05010              154 geneids.list2
+04530              154 geneids.list1
+00120              154 geneids.list1
+00140              154 geneids.list1
+00340              154 geneids.list1
+00360              154 geneids.list1
+00361              154 geneids.list1
+00364              154 geneids.list1
+00450              154 geneids.list1
+00480              154 geneids.list1
+00626              154 geneids.list1
+00627              154 geneids.list1
+00680              154 geneids.list1
+00830              154 geneids.list1
+00860              154 geneids.list1
+00940              154 geneids.list1
+00970              154 geneids.list1
+00983              154 geneids.list1
+01061              154 geneids.list1
+03018              154 geneids.list1
+03022              154 geneids.list1
+04114              154 geneids.list1
+04142              154 geneids.list1
+04150              154 geneids.list1
+04370              154 geneids.list1
+04520              154 geneids.list1
+04670              154 geneids.list1
+04730              154 geneids.list1
+04914              154 geneids.list1
+04950              154 geneids.list1
+04960              154 geneids.list1
+05120              154 geneids.list1
+05211              154 geneids.list1
+05215              154 geneids.list1
+04360              154 geneids.list1
+03320              154 geneids.list1
+04060              154 geneids.list1
+04062              154 geneids.list1
+04144              154 geneids.list1
+04146              154 geneids.list1
+04514              154 geneids.list1
+04660              154 geneids.list1
+04662              154 geneids.list1
+04666              154 geneids.list1
+05214              154 geneids.list1
+05410              154 geneids.list1
+05414              154 geneids.list1
+04010              154 geneids.list1
+04020              154 geneids.list1
+04512              154 geneids.list1
+00230              154 geneids.list1
+04115              154 geneids.list1
+04080              154 geneids.list1
+04120              154 geneids.list1
+03010              154 geneids.list2
+04210              154 geneids.list1
+04270              154 geneids.list1
+04810              154 geneids.list2
+04910              154 geneids.list2
+05014              154 geneids.list2
+05222              154 geneids.list1
+                                                  GeneIDs.geneids.list1
+01100 Cflo_13021 Cflo_07584 Cflo_11583 Cflo_05153 Cflo_06274 Cflo_04881
+04330                                                        Cflo_01890
+05012                                                        Cflo_11283
+04320                                             Cflo_01825 Cflo_02334
+00040                                             Cflo_11583 Cflo_05153
+00053                                             Cflo_11583 Cflo_05153
+00500                                             Cflo_11583 Cflo_05153
+00980                                             Cflo_10117 Cflo_11583
+00982                                             Cflo_10117 Cflo_11583
+04111                                             Cflo_01137 Cflo_07490
+04640                                             Cflo_09482 Cflo_00676
+05210                                             Cflo_07254 Cflo_15961
+05218                                             Cflo_15961 Cflo_08910
+05340                                             Cflo_04148 Cflo_03541
+05016                                                        Cflo_11283
+05200                       Cflo_07254 Cflo_15961 Cflo_13322 Cflo_08910
+04510                       Cflo_15961 Cflo_03186 Cflo_08910 Cflo_08272
+00350                                             Cflo_03105 Cflo_06274
+00520                                             Cflo_07524 Cflo_05153
+05010                                                        Cflo_11283
+04530                                  Cflo_05389 Cflo_03185 Cflo_06136
+00120                                                        Cflo_07584
+00140                                                        Cflo_11583
+00340                                                        Cflo_03105
+00360                                                        Cflo_13021
+00361                                                        Cflo_04881
+00364                                                        Cflo_04881
+00450                                                        Cflo_03105
+00480                                                        Cflo_10117
+00626                                                        Cflo_03105
+00627                                                        Cflo_04881
+00680                                                        Cflo_13021
+00830                                                        Cflo_11583
+00860                                                        Cflo_11583
+00940                                                        Cflo_13021
+00970                                                        Cflo_00012
+00983                                                        Cflo_11583
+01061                                                        Cflo_13021
+03018                                                        Cflo_11994
+03022                                                        Cflo_04455
+04114                                                        Cflo_08910
+04142                                                        Cflo_02109
+04150                                                        Cflo_08910
+04370                                                        Cflo_08272
+04520                                                        Cflo_15961
+04670                                                        Cflo_08272
+04730                                                        Cflo_08910
+04914                                                        Cflo_08910
+04950                                                        Cflo_07825
+04960                                                        Cflo_08910
+05120                                                        Cflo_15961
+05211                                                        Cflo_15961
+05215                                                        Cflo_08910
+04360                                  Cflo_07254 Cflo_02673 Cflo_15961
+03320                                                        Cflo_07584
+04060                                                        Cflo_15961
+04062                                                        Cflo_08272
+04144                                                        Cflo_15961
+04146                                                        Cflo_07584
+04514                                                        Cflo_04148
+04660                                                        Cflo_04148
+04662                                                        Cflo_03541
+04666                                                        Cflo_04148
+05214                                                        Cflo_08910
+05410                                                        Cflo_08910
+05414                                                        Cflo_08910
+04010                                             Cflo_13322 Cflo_03186
+04020                                             Cflo_02565 Cflo_02283
+04512                                             Cflo_09482 Cflo_00676
+00230                                             Cflo_04356 Cflo_06864
+04115                                             Cflo_11283 Cflo_08910
+04080                                             Cflo_10104 Cflo_02283
+04120                                             Cflo_01137 Cflo_04430
+03010                                                        Cflo_03006
+04210                                                        Cflo_11283
+04270                                                        Cflo_02283
+04810                                                        Cflo_08272
+04910                                                        Cflo_02565
+05014                                                        Cflo_11283
+05222                                                        Cflo_11283
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           GeneIDs.geneids.list2
+01100 Cflo_13021 Cflo_07584 Cflo_11583 Cflo_05153 Cflo_06274 Cflo_04881 Cflo_02220 Cflo_12518 Cflo_08928 Cflo_13851 Cflo_13852 Cflo_05321 Cflo_06527 Cflo_05444 Cflo_15695 Cflo_08220 Cflo_03318 Cflo_14306 Cflo_13139 Cflo_00469 Cflo_15704 Cflo_15705 Cflo_03341 Cflo_07131 Cflo_00375 Cflo_06385 Cflo_13846 Cflo_15056 Cflo_10225 Cflo_01125 Cflo_15353 Cflo_13303 Cflo_13849 Cflo_01577 Cflo_00009 Cflo_15055 Cflo_13845 Cflo_13715 Cflo_13850 Cflo_15354 Cflo_13847 Cflo_15057 Cflo_13848 Cflo_13844 Cflo_15054 Cflo_02175 Cflo_03047 Cflo_05349 Cflo_10164
+04330                                                                                                                                                                                                                                                                                                          Cflo_01890 Cflo_07082 Cflo_14725 Cflo_15106 Cflo_15781 Cflo_14963 Cflo_10878 Cflo_14786 Cflo_15677 Cflo_14936 Cflo_14332 Cflo_15217 Cflo_15661 Cflo_13474 Cflo_14402 Cflo_12708 Cflo_11665 Cflo_16214 Cflo_14428 Cflo_15127 Cflo_14827 Cflo_14701
+05012                                                                                                                                                                                                                                                                                                          Cflo_11283 Cflo_08928 Cflo_13851 Cflo_13852 Cflo_05321 Cflo_06527 Cflo_05444 Cflo_13846 Cflo_15056 Cflo_10225 Cflo_01125 Cflo_15353 Cflo_13303 Cflo_13849 Cflo_15055 Cflo_13845 Cflo_13715 Cflo_13850 Cflo_15354 Cflo_13848 Cflo_13844 Cflo_15054
+04320                                                                                                                                                                                                                                                              Cflo_01825 Cflo_02334 Cflo_07082 Cflo_14725 Cflo_15106 Cflo_15781 Cflo_14963 Cflo_10878 Cflo_14786 Cflo_15677 Cflo_14936 Cflo_14332 Cflo_15217 Cflo_15661 Cflo_13474 Cflo_14402 Cflo_12708 Cflo_11665 Cflo_16214 Cflo_14428 Cflo_15127 Cflo_14827 Cflo_14701 Cflo_05989 Cflo_00145 Cflo_07979
+00040                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_11583 Cflo_05153
+00053                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_11583 Cflo_05153
+00500                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_11583 Cflo_05153
+00980                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_10117 Cflo_11583
+00982                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_10117 Cflo_11583
+04111                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_01137 Cflo_07490
+04640                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_09482 Cflo_00676
+05210                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_07254 Cflo_15961
+05218                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_15961 Cflo_08910
+05340                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_04148 Cflo_03541
+05016                                                                                                                                                                                                                                                                                                                                                                                                  Cflo_11283 Cflo_08928 Cflo_13851 Cflo_05087 Cflo_09863 Cflo_13846 Cflo_15056 Cflo_10225 Cflo_01125 Cflo_15055 Cflo_13845 Cflo_13844 Cflo_15054 Cflo_03987
+05200                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Cflo_07254 Cflo_15961 Cflo_13322 Cflo_08910 Cflo_03246 Cflo_05654
+04510                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Cflo_15961 Cflo_03186 Cflo_08910 Cflo_08272 Cflo_10598 Cflo_08223 Cflo_05654
+00350                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Cflo_03105 Cflo_06274 Cflo_07131
+00520                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Cflo_07524 Cflo_05153 Cflo_05295
+05010                                                                                                                                                                                                                                                                                                                                                                                                                        Cflo_11283 Cflo_08928 Cflo_13851 Cflo_13846 Cflo_15056 Cflo_10225 Cflo_01125 Cflo_15055 Cflo_13845 Cflo_13844 Cflo_15054 Cflo_01311
+04530                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Cflo_05389 Cflo_03185 Cflo_06136 Cflo_04726 Cflo_11487
+00120                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_07584
+00140                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_11583
+00340                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_03105
+00360                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_13021
+00361                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_04881
+00364                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_04881
+00450                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_03105
+00480                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_10117
+00626                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_03105
+00627                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_04881
+00680                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_13021
+00830                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_11583
+00860                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_11583
+00940                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_13021
+00970                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_00012
+00983                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_11583
+01061                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_13021
+03018                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_11994
+03022                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_04455
+04114                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_08910
+04142                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_02109
+04150                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_08910
+04370                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_08272
+04520                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_15961
+04670                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_08272
+04730                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_08910
+04914                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_08910
+04950                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_07825
+04960                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_08910
+05120                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_15961
+05211                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_15961
+05215                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Cflo_08910
+04360                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Cflo_07254 Cflo_02673 Cflo_15961 Cflo_03282 Cflo_10677 Cflo_07227
+03320                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_07584 Cflo_13139
+04060                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_15961 Cflo_04049
+04062                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_08272 Cflo_08223
+04144                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_15961 Cflo_02220
+04146                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_07584 Cflo_13139
+04514                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_04148 Cflo_03282
+04660                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_04148 Cflo_09212
+04662                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_03541 Cflo_09212
+04666                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_04148 Cflo_02220
+05214                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_08910 Cflo_08223
+05410                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_08910 Cflo_05654
+05414                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Cflo_08910 Cflo_05654
+04010                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Cflo_13322 Cflo_03186 Cflo_07884 Cflo_01311
+04020                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Cflo_02565 Cflo_02283 Cflo_10598 Cflo_04627
+04512                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Cflo_09482 Cflo_00676 Cflo_01299 Cflo_05654
+00230                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Cflo_04356 Cflo_06864 Cflo_12518 Cflo_03341 Cflo_06385
+04115                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Cflo_11283 Cflo_08910 Cflo_05905 Cflo_10619 Cflo_08931
+04080                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Cflo_10104 Cflo_02283 Cflo_03834 Cflo_03975 Cflo_04627 Cflo_11785
+04120                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Cflo_01137 Cflo_04430 Cflo_12648 Cflo_10545 Cflo_00764 Cflo_04721
+03010                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Cflo_03006 Cflo_03429 Cflo_04709 Cflo_06813 Cflo_12963
+04210                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Cflo_11283 Cflo_10619 Cflo_03246
+04270                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Cflo_02283 Cflo_10598 Cflo_04627
+04810                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Cflo_08272 Cflo_02220 Cflo_10598 Cflo_00304
+04910                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Cflo_02565 Cflo_08223 Cflo_00764 Cflo_03987
+05014                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Cflo_11283 Cflo_07884 Cflo_03396 Cflo_03246
+05222                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Cflo_11283 Cflo_03246 Cflo_05654
+> 	q(save="no")
+> proc.time()
+   user  system elapsed 
+  0.745   0.037   0.964 

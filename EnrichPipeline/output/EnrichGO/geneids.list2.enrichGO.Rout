@@ -1,0 +1,37 @@
+
+R version 2.9.1 (2009-06-26)
+Copyright (C) 2009 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+>     load("output/GOdata/GOdata_example.RData")
+>     source("/panfs/ANIMAL/GROUP/group001/yangpch/bin/EnrichPipeline/bin/EnrichGO.R")
+>     source("/panfs/ANIMAL/GROUP/group001/yangpch/bin/EnrichPipeline/bin/EnrichGOallLevl.R")
+>     source("/panfs/ANIMAL/GROUP/group001/yangpch/bin/EnrichPipeline/bin/MergGO.R")
+>     ids <- scan("input/geneids.list2",what="character")
+Read 2063 items
+>     if("NullFile" != "NullFile") {
++ 	backid <- scan("NullFile",what="character")
++ 	aa <- EnrichGO(ids,univerID=backid,enrichFile="output/EnrichGO//geneids.list2.difgo3",p.adjust.method="fdr",test.method="FisherChiSquare")
++ 	aa <- EnrichGOallLevl(ids,univerID=backid,enrichFile="output/EnrichGO//geneids.list2.difgoall",p.adjust.method="fdr",test.method="FisherChiSquare")
++     }else{
++ 	aa <- EnrichGO(ids,enrichFile="output/EnrichGO//geneids.list2.difgo3",p.adjust.method="fdr",test.method="FisherChiSquare")
++         aa <- EnrichGOallLevl(ids,enrichFile="output/EnrichGO//geneids.list2.difgoall",p.adjust.method="fdr",test.method="FisherChiSquare")
++     }
+>     q(save="no")
+> proc.time()
+   user  system elapsed 
+  8.015   1.689  10.767 

@@ -1,0 +1,13 @@
+GO:0005576	extracellular region
+GO:0005623	cell
+GO:0019012	virion
+GO:0031974	membrane-enclosed lumen
+GO:0032991	macromolecular complex
+GO:0043226	organelle
+GO:0044421	extracellular region part
+GO:0044422	organelle part
+GO:0044423	virion part
+GO:0044456	synapse part
+GO:0044464	cell part
+GO:0045202	synapse
+GO:0055044	symplast

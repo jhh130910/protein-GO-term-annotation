@@ -1,0 +1,35 @@
+GO:0000003	reproduction
+GO:0008152	metabolic process
+GO:0001906	cell killing
+GO:0002376	immune system process
+GO:0006791	sulfur utilization
+GO:0006794	phosphorus utilization
+GO:0040007	growth
+GO:0007587	sugar utilization
+GO:0008283	cell proliferation
+GO:0016032	viral reproduction
+GO:0009758	carbohydrate utilization
+GO:0009987	cellular process
+GO:0015976	carbon utilization
+GO:0016043	cellular component organization
+GO:0016265	death
+GO:0019740	nitrogen utilization
+GO:0022414	reproductive process
+GO:0022610	biological adhesion
+GO:0023046	signaling process
+GO:0023052	signaling
+GO:0032501	multicellular organismal process
+GO:0032502	developmental process
+GO:0040011	locomotion
+GO:0043473	pigmentation
+GO:0044085	cellular component biogenesis
+GO:0048511	rhythmic process
+GO:0048518	positive regulation of biological process
+GO:0048519	negative regulation of biological process
+GO:0050789	regulation of biological process
+GO:0050896	response to stimulus
+GO:0051179	localization
+GO:0051234	establishment of localization
+GO:0051704	multi-organism process
+GO:0065007	biological regulation
+GO:0071554	cell wall organization or biogenesis

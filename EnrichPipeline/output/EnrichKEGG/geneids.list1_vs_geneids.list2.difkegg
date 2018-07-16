@@ -1,0 +1,81 @@
+MapID	MapTitle	Pvalue	AdjustedPv	x1.geneids.list1	x2.geneids.list2	n1.geneids.list1	n2.geneids.list2	WhichOver	GeneIDs.geneids.list1	GeneIDs.geneids.list2
+map01100	Metabolic pathways	0.0479644390386323	0.569299597504227	6	49	41	154	geneids.list2	Cflo_13021 Cflo_07584 Cflo_11583 Cflo_05153 Cflo_06274 Cflo_04881	Cflo_13021 Cflo_07584 Cflo_11583 Cflo_05153 Cflo_06274 Cflo_04881 Cflo_02220 Cflo_12518 Cflo_08928 Cflo_13851 Cflo_13852 Cflo_05321 Cflo_06527 Cflo_05444 Cflo_15695 Cflo_08220 Cflo_03318 Cflo_14306 Cflo_13139 Cflo_00469 Cflo_15704 Cflo_15705 Cflo_03341 Cflo_07131 Cflo_00375 Cflo_06385 Cflo_13846 Cflo_15056 Cflo_10225 Cflo_01125 Cflo_15353 Cflo_13303 Cflo_13849 Cflo_01577 Cflo_00009 Cflo_15055 Cflo_13845 Cflo_13715 Cflo_13850 Cflo_15354 Cflo_13847 Cflo_15057 Cflo_13848 Cflo_13844 Cflo_15054 Cflo_02175 Cflo_03047 Cflo_05349 Cflo_10164
+map04330	Notch signaling pathway	0.0523523902848812	0.569299597504227	1	22	41	154	geneids.list2	Cflo_01890	Cflo_01890 Cflo_07082 Cflo_14725 Cflo_15106 Cflo_15781 Cflo_14963 Cflo_10878 Cflo_14786 Cflo_15677 Cflo_14936 Cflo_14332 Cflo_15217 Cflo_15661 Cflo_13474 Cflo_14402 Cflo_12708 Cflo_11665 Cflo_16214 Cflo_14428 Cflo_15127 Cflo_14827 Cflo_14701
+map05012	Parkinson's disease	0.0523523902848812	0.569299597504227	1	22	41	154	geneids.list2	Cflo_11283	Cflo_11283 Cflo_08928 Cflo_13851 Cflo_13852 Cflo_05321 Cflo_06527 Cflo_05444 Cflo_13846 Cflo_15056 Cflo_10225 Cflo_01125 Cflo_15353 Cflo_13303 Cflo_13849 Cflo_15055 Cflo_13845 Cflo_13715 Cflo_13850 Cflo_15354 Cflo_13848 Cflo_13844 Cflo_15054
+map04320	Dorso-ventral axis formation	0.0896089604952758	0.569299597504227	2	26	41	154	geneids.list2	Cflo_01825 Cflo_02334	Cflo_01825 Cflo_02334 Cflo_07082 Cflo_14725 Cflo_15106 Cflo_15781 Cflo_14963 Cflo_10878 Cflo_14786 Cflo_15677 Cflo_14936 Cflo_14332 Cflo_15217 Cflo_15661 Cflo_13474 Cflo_14402 Cflo_12708 Cflo_11665 Cflo_16214 Cflo_14428 Cflo_15127 Cflo_14827 Cflo_14701 Cflo_05989 Cflo_00145 Cflo_07979
+map00040	Pentose and glucuronate interconversions	0.195230674725627	0.569299597504227	2	2	41	154	geneids.list1	Cflo_11583 Cflo_05153	Cflo_11583 Cflo_05153
+map00053	Ascorbate and aldarate metabolism	0.195230674725627	0.569299597504227	2	2	41	154	geneids.list1	Cflo_11583 Cflo_05153	Cflo_11583 Cflo_05153
+map00500	Starch and sucrose metabolism	0.195230674725627	0.569299597504227	2	2	41	154	geneids.list1	Cflo_11583 Cflo_05153	Cflo_11583 Cflo_05153
+map00980	Metabolism of xenobiotics by cytochrome P450	0.195230674725627	0.569299597504227	2	2	41	154	geneids.list1	Cflo_10117 Cflo_11583	Cflo_10117 Cflo_11583
+map00982	Drug metabolism - cytochrome P450	0.195230674725627	0.569299597504227	2	2	41	154	geneids.list1	Cflo_10117 Cflo_11583	Cflo_10117 Cflo_11583
+map04111	Cell cycle - yeast	0.195230674725627	0.569299597504227	2	2	41	154	geneids.list1	Cflo_01137 Cflo_07490	Cflo_01137 Cflo_07490
+map04640	Hematopoietic cell lineage	0.195230674725627	0.569299597504227	2	2	41	154	geneids.list1	Cflo_09482 Cflo_00676	Cflo_09482 Cflo_00676
+map05210	Colorectal cancer	0.195230674725627	0.569299597504227	2	2	41	154	geneids.list1	Cflo_07254 Cflo_15961	Cflo_07254 Cflo_15961
+map05218	Melanoma	0.195230674725627	0.569299597504227	2	2	41	154	geneids.list1	Cflo_15961 Cflo_08910	Cflo_15961 Cflo_08910
+map05340	Primary immunodeficiency	0.195230674725627	0.569299597504227	2	2	41	154	geneids.list1	Cflo_04148 Cflo_03541	Cflo_04148 Cflo_03541
+map05016	Huntington's disease	0.201508196071042	0.569299597504227	1	14	41	154	geneids.list2	Cflo_11283	Cflo_11283 Cflo_08928 Cflo_13851 Cflo_05087 Cflo_09863 Cflo_13846 Cflo_15056 Cflo_10225 Cflo_01125 Cflo_15055 Cflo_13845 Cflo_13844 Cflo_15054 Cflo_03987
+map05200	Pathways in cancer	0.222594234231063	0.569299597504227	4	6	41	154	geneids.list1	Cflo_07254 Cflo_15961 Cflo_13322 Cflo_08910	Cflo_07254 Cflo_15961 Cflo_13322 Cflo_08910 Cflo_03246 Cflo_05654
+map04510	Focal adhesion	0.247826878577243	0.569299597504227	4	7	41	154	geneids.list1	Cflo_15961 Cflo_03186 Cflo_08910 Cflo_08272	Cflo_15961 Cflo_03186 Cflo_08910 Cflo_08272 Cflo_10598 Cflo_08223 Cflo_05654
+map00350	Tyrosine metabolism	0.28297748389707	0.569299597504227	2	3	41	154	geneids.list1	Cflo_03105 Cflo_06274	Cflo_03105 Cflo_06274 Cflo_07131
+map00520	Amino sugar and nucleotide sugar metabolism	0.28297748389707	0.569299597504227	2	3	41	154	geneids.list1	Cflo_07524 Cflo_05153	Cflo_07524 Cflo_05153 Cflo_05295
+map05010	Alzheimer's disease	0.307813768717056	0.569299597504227	1	12	41	154	geneids.list2	Cflo_11283	Cflo_11283 Cflo_08928 Cflo_13851 Cflo_13846 Cflo_15056 Cflo_10225 Cflo_01125 Cflo_15055 Cflo_13845 Cflo_13844 Cflo_15054 Cflo_01311
+map04530	Tight junction	0.368352116605886	0.569299597504227	3	5	41	154	geneids.list1	Cflo_05389 Cflo_03185 Cflo_06136	Cflo_05389 Cflo_03185 Cflo_06136 Cflo_04726 Cflo_11487
+map00120	Primary bile acid biosynthesis	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_07584	Cflo_07584
+map00140	Steroid hormone biosynthesis	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_11583	Cflo_11583
+map00340	Histidine metabolism	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_03105	Cflo_03105
+map00360	Phenylalanine metabolism	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_13021	Cflo_13021
+map00361	Chlorocyclohexane and chlorobenzene degradation	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_04881	Cflo_04881
+map00364	Fluorobenzoate degradation	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_04881	Cflo_04881
+map00450	Selenocompound metabolism	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_03105	Cflo_03105
+map00480	Glutathione metabolism	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_10117	Cflo_10117
+map00626	Naphthalene degradation	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_03105	Cflo_03105
+map00627	Aminobenzoate degradation	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_04881	Cflo_04881
+map00680	Methane metabolism	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_13021	Cflo_13021
+map00830	Retinol metabolism	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_11583	Cflo_11583
+map00860	Porphyrin and chlorophyll metabolism	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_11583	Cflo_11583
+map00940	Phenylpropanoid biosynthesis	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_13021	Cflo_13021
+map00970	Aminoacyl-tRNA biosynthesis	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_00012	Cflo_00012
+map00983	Drug metabolism - other enzymes	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_11583	Cflo_11583
+map01061	Biosynthesis of phenylpropanoids	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_13021	Cflo_13021
+map03018	RNA degradation	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_11994	Cflo_11994
+map03022	Basal transcription factors	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_04455	Cflo_04455
+map04114	Oocyte meiosis	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_08910	Cflo_08910
+map04142	Lysosome	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_02109	Cflo_02109
+map04150	mTOR signaling pathway	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_08910	Cflo_08910
+map04370	VEGF signaling pathway	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_08272	Cflo_08272
+map04520	Adherens junction	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_15961	Cflo_15961
+map04670	Leukocyte transendothelial migration	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_08272	Cflo_08272
+map04730	Long-term depression	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_08910	Cflo_08910
+map04914	Progesterone-mediated oocyte maturation	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_08910	Cflo_08910
+map04950	Maturity onset diabetes of the young	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_07825	Cflo_07825
+map04960	Aldosterone-regulated sodium reabsorption	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_08910	Cflo_08910
+map05120	Epithelial cell signaling in Helicobacter pylori infection	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_15961	Cflo_15961
+map05211	Renal cell carcinoma	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_15961	Cflo_15961
+map05215	Prostate cancer	0.377160983346550	0.569299597504227	1	1	41	154	geneids.list1	Cflo_08910	Cflo_08910
+map04360	Axon guidance	0.400493958265897	0.593324382616144	3	6	41	154	geneids.list1	Cflo_07254 Cflo_02673 Cflo_15961	Cflo_07254 Cflo_02673 Cflo_15961 Cflo_03282 Cflo_10677 Cflo_07227
+map03320	PPAR signaling pathway	0.509473935070858	0.617544163722252	1	2	41	154	geneids.list1	Cflo_07584	Cflo_07584 Cflo_13139
+map04060	Cytokine-cytokine receptor interaction	0.509473935070858	0.617544163722252	1	2	41	154	geneids.list1	Cflo_15961	Cflo_15961 Cflo_04049
+map04062	Chemokine signaling pathway	0.509473935070858	0.617544163722252	1	2	41	154	geneids.list1	Cflo_08272	Cflo_08272 Cflo_08223
+map04144	Endocytosis	0.509473935070858	0.617544163722252	1	2	41	154	geneids.list1	Cflo_15961	Cflo_15961 Cflo_02220
+map04146	Peroxisome	0.509473935070858	0.617544163722252	1	2	41	154	geneids.list1	Cflo_07584	Cflo_07584 Cflo_13139
+map04514	Cell adhesion molecules (CAMs)	0.509473935070858	0.617544163722252	1	2	41	154	geneids.list1	Cflo_04148	Cflo_04148 Cflo_03282
+map04660	T cell receptor signaling pathway	0.509473935070858	0.617544163722252	1	2	41	154	geneids.list1	Cflo_04148	Cflo_04148 Cflo_09212
+map04662	B cell receptor signaling pathway	0.509473935070858	0.617544163722252	1	2	41	154	geneids.list1	Cflo_03541	Cflo_03541 Cflo_09212
+map04666	Fc gamma R-mediated phagocytosis	0.509473935070858	0.617544163722252	1	2	41	154	geneids.list1	Cflo_04148	Cflo_04148 Cflo_02220
+map05214	Glioma	0.509473935070858	0.617544163722252	1	2	41	154	geneids.list1	Cflo_08910	Cflo_08910 Cflo_08223
+map05410	Hypertrophic cardiomyopathy (HCM)	0.509473935070858	0.617544163722252	1	2	41	154	geneids.list1	Cflo_08910	Cflo_08910 Cflo_05654
+map05414	Dilated cardiomyopathy	0.509473935070858	0.617544163722252	1	2	41	154	geneids.list1	Cflo_08910	Cflo_08910 Cflo_05654
+map04010	MAPK signaling pathway	0.607737126105291	0.704622754904686	2	4	41	154	geneids.list1	Cflo_13322 Cflo_03186	Cflo_13322 Cflo_03186 Cflo_07884 Cflo_01311
+map04020	Calcium signaling pathway	0.607737126105291	0.704622754904686	2	4	41	154	geneids.list1	Cflo_02565 Cflo_02283	Cflo_02565 Cflo_02283 Cflo_10598 Cflo_04627
+map04512	ECM-receptor interaction	0.607737126105291	0.704622754904686	2	4	41	154	geneids.list1	Cflo_09482 Cflo_00676	Cflo_09482 Cflo_00676 Cflo_01299 Cflo_05654
+map00230	Purine metabolism	0.639215011047459	0.720242265968968	2	5	41	154	geneids.list1	Cflo_04356 Cflo_06864	Cflo_04356 Cflo_06864 Cflo_12518 Cflo_03341 Cflo_06385
+map04115	p53 signaling pathway	0.639215011047459	0.720242265968968	2	5	41	154	geneids.list1	Cflo_11283 Cflo_08910	Cflo_11283 Cflo_08910 Cflo_05905 Cflo_10619 Cflo_08931
+map04080	Neuroactive ligand-receptor interaction	0.67540317103358	0.740167858666937	2	6	41	154	geneids.list1	Cflo_10104 Cflo_02283	Cflo_10104 Cflo_02283 Cflo_03834 Cflo_03975 Cflo_04627 Cflo_11785
+map04120	Ubiquitin mediated proteolysis	0.67540317103358	0.740167858666937	2	6	41	154	geneids.list1	Cflo_01137 Cflo_04430	Cflo_01137 Cflo_04430 Cflo_12648 Cflo_10545 Cflo_00764 Cflo_04721
+map03010	Ribosome	1	1	1	5	41	154	geneids.list2	Cflo_03006	Cflo_03006 Cflo_03429 Cflo_04709 Cflo_06813 Cflo_12963
+map04210	Apoptosis	1	1	1	3	41	154	geneids.list1	Cflo_11283	Cflo_11283 Cflo_10619 Cflo_03246
+map04270	Vascular smooth muscle contraction	1	1	1	3	41	154	geneids.list1	Cflo_02283	Cflo_02283 Cflo_10598 Cflo_04627
+map04810	Regulation of actin cytoskeleton	1	1	1	4	41	154	geneids.list2	Cflo_08272	Cflo_08272 Cflo_02220 Cflo_10598 Cflo_00304
+map04910	Insulin signaling pathway	1	1	1	4	41	154	geneids.list2	Cflo_02565	Cflo_02565 Cflo_08223 Cflo_00764 Cflo_03987
+map05014	Amyotrophic lateral sclerosis (ALS)	1	1	1	4	41	154	geneids.list2	Cflo_11283	Cflo_11283 Cflo_07884 Cflo_03396 Cflo_03246
+map05222	Small cell lung cancer	1	1	1	3	41	154	geneids.list1	Cflo_11283	Cflo_11283 Cflo_03246 Cflo_05654
