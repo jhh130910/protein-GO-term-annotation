@@ -1,10 +1,9 @@
-# Variant_Call_in_species
+# GO and KEGG  
 
-[readme](https://github.com/jhh130910)
+[homepage-jinhh](https://github.com/jhh130910)
 
-## description 
+## function description 
+
 *1. detect Variant in genome*
-
-  
 *2. detect Variant use reads*
   
